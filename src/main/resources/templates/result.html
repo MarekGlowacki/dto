@@ -6,8 +6,8 @@
 </head>
 <body>
   <h1>Wynik Twoich obliczeń</h1>
-  <p th:text="'Kwota netto: ' + ${nettoPrice}">Kwota netto: 100 zł</p>
-  <p th:text="'Kwota vat: ' + ${vat}">Kwota vat: 23%</p>
-  <p th:text="'Kwota brutto: ' + ${bruttoPrice}">Kwota brutto: 123 zł</p>
+  <p th:text="'Kwota netto: ' + ${vat.nettoPrice}">Kwota netto: 100 zł</p>
+  <p th:text="'Kwota vat: ' + ${vat.vat}">Kwota vat: 23%</p>
+  <p th:text="'Kwota brutto: ' + ${vat.bruttoPrice}">Kwota brutto: 123 zł</p>
 </body>
 </html>

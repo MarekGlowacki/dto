@@ -18,10 +18,7 @@ public class VatController {
     String calculate(@RequestParam double nettoPrice,
                      @RequestParam String category,
                      Model model) {
-        double vat = vatService.calculateVat(nettoPrice, category);
-        double bruttoPrice = vatService.calculateBruttoPrice(nettoPrice, category);
-        model.addAttribute("nettoPrice", nettoPrice);
-        model.addAttribute("bruttoPrice", bruttoPrice);
+        VatDto vat = vatService.calculateVat(nettoPrice, category);
         model.addAttribute("vat", vat);
         return "result";
     }
