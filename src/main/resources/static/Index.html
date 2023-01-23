@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Vat</title>
+</head>
+<body>
+  <h1>Kalkulator Vat</h1>
+  <form method="post" action="/calculate">
+    <div>
+      <label>
+        Kwota netto:
+        <imput name="nettoPrice" type="number" step="0.01">
+      </label>
+    </div>
+    <div>
+      <label>
+        Kategoria:
+        <select name="category">
+          <option value="service">Usługi</option>
+          <option value="food">Spożywka</option>
+          <option value="other">Pozostałe</option>
+        </select>
+      </label>
+    </div>
+    <button type="submit">Oblicz Vat i kwotę brutto</button>
+  </form>
+</body>
+</html>
